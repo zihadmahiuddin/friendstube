@@ -1,0 +1,39 @@
+{
+  "name": "@friendstube/primary",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "migrate": "dotenv -e .env.development.local -- pnpm prisma migrate",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "5.2.0",
+    "@types/node": "20.5.1",
+    "@types/react": "18.2.20",
+    "@types/react-dom": "18.2.7",
+    "clsx": "^2.0.0",
+    "next": "13.4.19",
+    "next-themes": "^0.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-player": "^2.12.0",
+    "redis": "^4.6.8",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss": "3.3.3",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.15",
+    "dotenv-cli": "^7.3.0",
+    "encoding": "^0.1.13",
+    "postcss": "8.4.28",
+    "prettier": "^3.0.2",
+    "prettier-plugin-tailwindcss": "^0.5.3",
+    "prisma": "^5.2.0",
+    "typescript": "5.1.6"
+  }
+}
